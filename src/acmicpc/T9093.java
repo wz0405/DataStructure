@@ -1,12 +1,8 @@
 package acmicpc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.EmptyStackException;
-import java.util.Scanner;
 
-import Stackimple.Node;
+import java.io.IOException;
+import java.util.Scanner;
 
 class Stack<T>{
 	class Node<T>{
