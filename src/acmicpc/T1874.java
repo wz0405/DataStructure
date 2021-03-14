@@ -22,6 +22,7 @@ class Stack1874<T>{
 		top = t;
 	}
 	public T pop() {
+	
 		T item =top.data;
 		top = top.next;
 		return item;
@@ -47,22 +48,24 @@ public class T1874 {
 		
 		for(int i=0; i<N ; i++) {
 			int putnum = sc.nextInt();
+			sc.nextLine();
 			inputList.add(putnum);
 		}
 		for(int k=1; k<N+1 ; k++) {
 			s.push(k);
 			System.out.println("+");
-			while(inputList.get(0)==s.top()) {
+		
+			while(!inputList.isEmpty()&& !s.isEmpty() && inputList.get(0)==s.top()) {
 				s.pop();
 				inputList.remove(0);
 				System.out.println("-");
 			}
+			
 		}
 		if(! s.isEmpty()) {
 			resultList.clear();
 			resultList.add("NO");
 		}
-		System.out.println(resultList.toString());
 	}
 	
 
