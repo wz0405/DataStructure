@@ -13,7 +13,7 @@ public class T17298 {
 		String str = sc.nextLine();
 		str = str.replace(" ", "");
 		String result = "";
-		boolean ckBig = false;
+		boolean ckBig = false;//
 		List<Integer> list = new ArrayList<Integer>();
 		for (int i=0; i<str.length() ; i++) {
 			
